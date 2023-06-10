@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head xmlns="http://www.w3.org/1999/html">
+    <title>Search by Salary - Nitya Kansara</title>
+</head>
+<body>
+<center><h3>CSE 6331 - Assignment-01</h3></center>
+<center><h4>Nitya Kansara - 1001869794</h4></center><br/><br/>
+
+<div>
+    {%if message%}
+        <div id="displayImages"></div>
+
+            {% for t in image_path %}
+                <img src={{t}} alt='Preview' width='100' height='120'>
+            {% endfor %}
+
+    {%endif%}
+    {%if error%}
+        {{error}}
+    {%endif%}
+</div>
+</body>
+</html>

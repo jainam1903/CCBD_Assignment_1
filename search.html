@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Search - Nitya Kansara</title>
+</head>
+<body>
+    <table style="border: 1px solid black; padding: 8px;">
+        <tr><td>1</td><td><a href="/">Home</a></td></tr>
+
+    </table><br/><br/><br/>
+
+<center><h3>CSE 6331 - Assignment-01</h3></center>
+<center><h4>Nitya Kansara - 1001869794</h4></center><br/><br/>
+
+
+<form action="/searchimage" method="post">
+    <input type="text" name="name" placeholder="Enter Name here..">
+    <input type="submit" value="Search">
+</form><br/><br/>
+
+<div>
+    {%if message%}
+        <img src={{ image_path }} alt="Preview" width="500" height="600">
+    {%endif%}
+    {%if error%}
+        {{error}}
+    {%endif%}
+</div>
+
+
+</body>
+</html>

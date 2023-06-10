@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Result</title>
+</head>
+<body>
+    <h1>Jainam Gandhi</h1>
+    <h1>80417</h1>
+    <h1>Search Result</h1>
+    {% if result %}
+        <img src="{{ result['Picture'] }}" alt="Picture">
+    {% else %}
+        <p>No result found.</p>
+    {% endif %}
+</body>
+</html>
